@@ -7,6 +7,15 @@ a {
   text-decoration: none;
 }
 
+h2,
+h3,
+p,
+ul,
+ol {
+  letter-spacing: 1.5;
+  line-height: 1;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
   color: rgba(0, 0, 0, 1);

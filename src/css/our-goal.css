@@ -1,0 +1,42 @@
+.our-goal-section {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.first-goal-container {
+  background-color: #9dafab;
+  padding: 16px;
+  border-radius: 24px;
+}
+
+.our-goal-first-title,
+.our-goal-second-title {
+  font-size: 32px;
+}
+
+.our-goal-list,
+.our-goal-text {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-goal-section {
+    max-width: 768px;
+  }
+
+  .our-goal-container {
+    display: flex;
+    gap: 64px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .our-goal-section {
+    max-width: 1440px;
+  }
+
+  .our-goal-container {
+    gap: 200px;
+  }
+}

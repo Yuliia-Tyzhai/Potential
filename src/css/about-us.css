@@ -1,0 +1,49 @@
+.about-us-section {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  height: 100%;
+}
+
+.about-us-title {
+  font-size: 48px;
+}
+
+.about-us-text {
+  font-size: 24px;
+}
+
+.about-us-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-section {
+    max-width: 768px;
+  }
+
+  .about-us-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .about-us-title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-us-section {
+    max-width: 1440px;
+  }
+
+  .about-us-title {
+    font-size: 64px;
+  }
+
+  .about-us-text {
+    font-size: 32px;
+  }
+}
