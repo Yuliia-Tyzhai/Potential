@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 h2,
 h3,
 p,
