@@ -1,0 +1,148 @@
+.faq-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  padding: 60px 16px;
+}
+.faq-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.21429;
+  text-align: center;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #adb1b0;
+  text-align: center;
+}
+
+.faq-question-container {
+  position: relative;
+  border-radius: 18px;
+  padding: 16px;
+  background-color: #9dafab;
+  margin-bottom: 8px;
+}
+
+.faq-question-container:hover {
+  background: #8ea19d;
+}
+
+.faq-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.faq-question {
+  position: relative;
+}
+
+.faq-question-text {
+  text-align: start;
+  background: transparent;
+  border: none;
+  font-family: 'Boogaloo', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.faq-acc-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: transparent;
+  stroke: #fff;
+}
+
+.faq-answer-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #fff;
+  padding: 16px;
+}
+
+.faq-answer {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border-radius: 18px;
+  background: #9dafab;
+}
+
+.faq-question-text[aria-expanded='true'] .faq-acc-svg {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+  .faq-title {
+    font-size: 48px;
+  }
+
+  .faq-text {
+    font-size: 34px;
+  }
+
+  .faq-question-text {
+    font-size: 24px;
+  }
+
+  .faq-answer-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq-container {
+    justify-content: space-between;
+    gap: 32px;
+    padding: 88px 228px;
+  }
+
+  .faq-title {
+    font-size: 64px;
+  }
+
+  .faq-text {
+    font-size: 48px;
+  }
+
+  .faq-question-container {
+    margin-bottom: 16px;
+  }
+
+  .faq-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .faq-question-text {
+    font-size: 28px;
+    line-height: 1.21429;
+  }
+
+  .faq-acc-svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: transparent;
+    stroke: #fff;
+  }
+
+  .faq-answer-text {
+    padding: 24px;
+  }
+
+  br {
+    display: none;
+  }
+}
