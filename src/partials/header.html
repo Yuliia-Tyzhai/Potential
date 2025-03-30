@@ -1,27 +1,50 @@
 <header class="header">
-  <svg class="" width="120px" height="91px">
-    <use href="/img/logo.svg"></use>
-  </svg>
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-list-item">
-        <a href="">Про нас</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Наша команда</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Послуги</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Питання/відповіді</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Відгуки</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Контакти</a>
-      </li>
+  <div class="header-container container">
+    <a href="#hero" class="logo">
+      <img src="/img/page-logo.png" alt="Логотип" />
+    </a>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li><a href="./#about-us">Про нас</a></li>
+        <li><a href="./#our-team">Наша команда</a></li>
+        <li><a href="">Послуги</a></li>
+        <li><a href="./#faq">Питання/відповіді</a></li>
+        <li><a href="./#reviews">Відгуки</a></li>
+        <li><a href="./#footer">Контакти</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-open-btn" type="button">
+      <svg
+        class="mobile-menu-open-btn-icon"
+        width="24"
+        height="24"
+        aria-label="Мобільне меню"
+      >
+        <use href="/img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <button class="mobile-menu-close-btn" type="button">
+    <svg
+      class="mobile-menu-close-btn-icon"
+      width="24"
+      height="24"
+      aria-label="Закрити мобільне меню"
+    >
+      <use href="/img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav class="mobile-nav">
+    <ul class="mobile-nav-list">
+      <li><a href="./#about-us">Про нас</a></li>
+      <li><a href="./#our-team">Наша команда</a></li>
+      <li><a href="">Послуги</a></li>
+      <li><a href="./#faq">Питання/відповіді</a></li>
+      <li><a href="./#reviews">Відгуки</a></li>
+      <li><a href="./#footer">Контакти</a></li>
     </ul>
   </nav>
-</header>
+</div>

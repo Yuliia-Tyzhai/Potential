@@ -1,30 +1,148 @@
-/* // .header {
-//   padding: 20px 0;
-// }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background: #9dafab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
 
-// .nav-list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 40px;
+.header-container {
+  max-width: 375px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-//   @include media(tablet) {
-//     justify-content: flex-start;
-//   }
+.logo img {
+  height: 40px;
+}
 
-//   @include media(desktop) {
-//     justify-content: flex-end;
-//   }
-// }
+.nav-container {
+  display: none;
+}
 
-// .nav-link {
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-//   @include font(30, 40);
-//   color: $_header_color;
-// }
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
 
-// .nav-link:hover,
-// .nav-link:focus {
-//   color: $_header_accent_color;
-// } */
+.nav-list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav-list li {
+  margin-bottom: 15px;
+}
+
+.mobile-nav-list a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.mobile-menu-open-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-close-btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.mobile-menu-close-btn-icon {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 0;
+    margin-right: 60px;
+  }
+
+  .header-container {
+    max-width: 768px;
+  }
+
+  .nav-container {
+    display: block;
+  }
+
+  .nav-list {
+    gap: 25px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu-open-btn {
+    display: none;
+  }
+
+  .mobile-menu-close-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    margin-left: 0;
+    margin-right: 370px;
+  }
+
+  .header-container {
+    max-width: 1440px;
+  }
+
+  .nav-list {
+    gap: 80px;
+  }
+
+  .header {
+    padding: 20px 40px;
+  }
+}
