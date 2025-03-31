@@ -17,6 +17,36 @@
   width: 100%;
 }
 
+.first-goal-container {
+  background-color: #9dafab;
+  padding: 16px;
+  border-radius: 24px;
+}
+
+.our-goal-first-title,
+.our-goal-second-title {
+  font-size: 32px;
+}
+
+.our-goal-list,
+.our-goal-text {
+  font-size: 24px;
+}
+
+.about-us-list {
+  list-style: none;
+  font-size: 24px;
+  padding-left: 0;
+}
+
+.about-us-list-item::before {
+  content: '✔';
+  margin-right: 8px;
+  color: green;
+  font-size: 24px;
+  font-weight: 800;
+}
+
 @media screen and (min-width: 768px) {
   .about-us-section {
     max-width: 768px;
@@ -24,6 +54,7 @@
 
   .about-us-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 32px;
     padding: 0;
@@ -31,6 +62,29 @@
 
   .about-us-title {
     font-size: 48px;
+  }
+
+  .our-goal-container {
+    display: flex;
+    gap: 64px;
+    padding: 0;
+  }
+
+  .first-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .about-us-sec-img {
+    max-width: 60%;
+    height: 60%;
+    margin-top: 120px;
+  }
+
+  .about-us-list {
+    font-size: 32px;
   }
 }
 
@@ -45,5 +99,15 @@
 
   .about-us-text {
     font-size: 32px;
+  }
+
+  .our-goal-container {
+    gap: 200px;
+  }
+
+  .about-us-sec-img {
+    max-width: 60%;
+    height: 60%;
+    margin-top: 60px;
   }
 }

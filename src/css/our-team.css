@@ -1,3 +1,8 @@
+.our-team-title {
+  font-size: 32px;
+  text-align: center;
+}
+
 .team-list {
   display: flex;
   flex-direction: column;
@@ -27,6 +32,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .our-team-title {
+    font-size: 48px;
+  }
   .team-member-block {
     display: flex;
     flex-direction: row;
@@ -41,6 +49,10 @@
 @media screen and (min-width: 1440px) {
   .team-member-block {
     gap: 320px;
+  }
+
+  .our-team-title {
+    font-size: 64px;
   }
 
   .team-list-img {
