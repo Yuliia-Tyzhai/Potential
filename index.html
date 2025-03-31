@@ -20,38 +20,61 @@
     <title>Potential+</title>
     
     <script type="module" crossorigin src="/Potential/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Potential/assets/index-50bafedb.css">
+    <link rel="stylesheet" href="/Potential/assets/index-854cfc41.css">
   </head>
   <body>
     <header class="header">
-  <svg class="" width="120px" height="91px">
-    <use href="/Potential/assets/logo-2cb1b4d7.svg"></use>
-  </svg>
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-list-item">
-        <a href="">Про нас</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Наша команда</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Послуги</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Питання/відповіді</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Відгуки</a>
-      </li>
-      <li class="nav-list-item">
-        <a href="">Контакти</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="header-container container">
+    <a href="#hero" class="logo">
+      <img src="/Potential/assets/page-logo-3bb01e51.png" alt="Логотип" />
+    </a>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li><a href="./#about-us">Про нас</a></li>
+        <li><a href="./#our-team">Наша команда</a></li>
+        <li><a href="">Послуги</a></li>
+        <li><a href="./#faq">Питання/відповіді</a></li>
+        <li><a href="./#reviews">Відгуки</a></li>
+        <li><a href="./#footer">Контакти</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-open-btn" type="button">
+      <svg
+        class="mobile-menu-open-btn-icon"
+        width="24"
+        height="24"
+        aria-label="Мобільне меню"
+      >
+        <use href="/Potential/assets/sprite-6e9394d2.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
 </header>
 
-    <section class="hero-section section">
+<div class="mobile-menu">
+  <button class="mobile-menu-close-btn" type="button">
+    <svg
+      class="mobile-menu-close-btn-icon"
+      width="24"
+      height="24"
+      aria-label="Закрити мобільне меню"
+    >
+      <use href="/Potential/assets/sprite-6e9394d2.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav class="mobile-nav">
+    <ul class="mobile-nav-list">
+      <li><a href="./#about-us">Про нас</a></li>
+      <li><a href="./#our-team">Наша команда</a></li>
+      <li><a href="">Послуги</a></li>
+      <li><a href="./#faq">Питання/відповіді</a></li>
+      <li><a href="./#reviews">Відгуки</a></li>
+      <li><a href="./#footer">Контакти</a></li>
+    </ul>
+  </nav>
+</div>
+
+    <section class="hero-section section" id="hero">
   <div class="hero-container container">
     <h1 class="hero-title">Підбір талантів для розвитку вашого бізнесу</h1>
     <p class="hero-text-first">Індивідуальні рішення для ефективного HR</p>
@@ -70,7 +93,7 @@
   </div>
 </section>
 
-    <section class="about-us-section section">
+    <section class="about-us-section section" id="about-us">
   <div class="about-us-container container">
     <div class="about-us-text-container">
       <h2 class="about-us-title">Potential +: хто ми?</h2>
@@ -108,7 +131,7 @@
   </div>
 </section>
 
-    <section class="our-team-section">
+    <section class="our-team-section" id="our-team">
   <div class="our-team-container container">
     <h2 class="our-team-title">Наша команда</h2>
     <ul class="team-list">
@@ -195,7 +218,7 @@
   </div>
 </section>
 
-    <section class="faq-section">
+    <section class="faq-section" id="faq">
   <div class="faq-container container">
     <h2 class="faq-title">Часті запитання</h2>
     <p class="faq-text">Відповідаємо на Ваші найпоширеніші запитання.</p>
