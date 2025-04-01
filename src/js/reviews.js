@@ -30,14 +30,14 @@ const reviews = [
     rating: 5,
   },
   {
-    avatar_url: '/img/reviews/reviews-5.jpg',
+    avatar_url: '../img/reviews/reviews-5.jpg',
     author: 'Світлана Ж.',
     review:
       'Їхні рекомендації щодо управління персоналом допомогли нам не лише оптимізувати HR-процеси, а й значно підвищити прибутки.',
     rating: 4.5,
   },
   {
-    avatar_url: '/img/reviews/reviews-6.jpg',
+    avatar_url: './img/reviews/reviews-6.jpg',
     author: 'Арда М.',
     review:
       'Співпраця з цією консалтинговою компанією принесла нам цінні інсайти та практичні рішення для поліпшення бізнесу.',
