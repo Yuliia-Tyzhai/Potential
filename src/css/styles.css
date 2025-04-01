@@ -2,9 +2,9 @@
 @import './header.css';
 @import './hero.css';
 @import './about-us.css';
-@import './our-goal.css';
 @import './our-team.css';
 @import './faq.css';
+@import './footer.css';
 
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;

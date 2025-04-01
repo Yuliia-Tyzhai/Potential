@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  background: #9dafab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.footer-container {
+  max-width: 375px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
