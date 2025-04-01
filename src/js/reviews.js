@@ -37,7 +37,7 @@ const reviews = [
     rating: 4.5,
   },
   {
-    avatar_url: './img/reviews/reviews-6-min.jpg',
+    avatar_url: '/img/reviews/reviews-6-min.jpg',
     author: 'Арда М.',
     review:
       'Співпраця з цією консалтинговою компанією принесла нам цінні інсайти та практичні рішення для поліпшення бізнесу.',
