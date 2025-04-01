@@ -2,42 +2,42 @@ import Swiper from 'swiper/bundle';
 
 const reviews = [
   {
-    avatar_url: '/img/reviews/reviews-1-min.jpg',
+    avatar_url: '/Potential/assets/img/reviews/reviews-1-min.jpg',
     author: 'Олексій Д.',
     review:
       'Завдяки їхньому командному підходу ми оптимізували HR-процеси і досягли нових висот в управлінні персоналом.',
     rating: 5,
   },
   {
-    avatar_url: '/img/reviews/reviews-2-min.jpg',
+    avatar_url: '/Potential/assets/img/reviews/reviews-2-min.jpg',
     author: 'Дмитро М.',
     review:
       'Після співпраці з ними ми отримали значні поліпшення в нашому HR-менеджменті та підвищили ефективність компанії.',
     rating: 5,
   },
   {
-    avatar_url: '/img/reviews/reviews-3-min.jpg',
+    avatar_url: '/Potential/assets/img/reviews/reviews-3-min.jpg',
     author: 'Іван С.',
     review:
       'Завдяки їхньому професіоналізму та компетентності, наші бізнес-процеси стали більш ефективними та продуктивними.',
     rating: 5,
   },
   {
-    avatar_url: '/img/reviews/reviews-4-min.jpg',
+    avatar_url: '/Potential/assets/img/reviews/reviews-4-min.jpg',
     author: 'Марина К.',
     review:
       'Їхній індивідуальний підхід та професійні поради дозволили нам сформувати HR-відділ, який дійсно працює на бізнес.',
     rating: 5,
   },
   {
-    avatar_url: '/img/reviews/reviews-5-min.jpg',
+    avatar_url: '/Potential/assets/img/reviews/reviews-5-min.jpg',
     author: 'Світлана Ж.',
     review:
       'Їхні рекомендації щодо управління персоналом допомогли нам не лише оптимізувати HR-процеси, а й значно підвищити прибутки.',
     rating: 4.5,
   },
   {
-    avatar_url: '/img/reviews/reviews-6-min.jpg',
+    avatar_url: '/Potential/assets/img/reviews/reviews-6-min.jpg',
     author: 'Арда М.',
     review:
       'Співпраця з цією консалтинговою компанією принесла нам цінні інсайти та практичні рішення для поліпшення бізнесу.',
