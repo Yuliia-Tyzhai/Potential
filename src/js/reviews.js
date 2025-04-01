@@ -2,7 +2,7 @@ import Swiper from 'swiper/bundle';
 
 const reviews = [
   {
-    avatar_url: '/img/reviews/reviews-1-min.jpg',
+    avatar_url: './img/reviews/reviews-1-min.jpg',
     author: 'Олексій Д.',
     review:
       'Завдяки їхньому командному підходу ми оптимізували HR-процеси і досягли нових висот в управлінні персоналом.',

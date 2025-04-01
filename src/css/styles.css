@@ -7,7 +7,7 @@
 @import './reviews.css';
 @import './footer.css';
 
-/* :root {
+:root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -21,7 +21,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-} */
+}
 
 :root {
   --swiper-theme-color: #ffffff;
