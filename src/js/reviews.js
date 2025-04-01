@@ -16,28 +16,28 @@ const reviews = [
     rating: 5,
   },
   {
-    avatar_url: '/img/reviews/reviews-3.jpg',
+    avatar_url: 'img/reviews/reviews-3.jpg',
     author: 'Іван С.',
     review:
       'Завдяки їхньому професіоналізму та компетентності, наші бізнес-процеси стали більш ефективними та продуктивними.',
     rating: 5,
   },
   {
-    avatar_url: '/img/reviews/reviews-4.jpg',
+    avatar_url: '/src/img/reviews/reviews-4.jpg',
     author: 'Марина К.',
     review:
       'Їхній індивідуальний підхід та професійні поради дозволили нам сформувати HR-відділ, який дійсно працює на бізнес.',
     rating: 5,
   },
   {
-    avatar_url: '../img/reviews/reviews-5.jpg',
+    avatar_url: 'src/img/reviews/reviews-5.jpg',
     author: 'Світлана Ж.',
     review:
       'Їхні рекомендації щодо управління персоналом допомогли нам не лише оптимізувати HR-процеси, а й значно підвищити прибутки.',
     rating: 4.5,
   },
   {
-    avatar_url: './img/reviews/reviews-6.jpg',
+    avatar_url: './src/img/reviews/reviews-6.jpg',
     author: 'Арда М.',
     review:
       'Співпраця з цією консалтинговою компанією принесла нам цінні інсайти та практичні рішення для поліпшення бізнесу.',
