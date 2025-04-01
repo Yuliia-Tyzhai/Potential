@@ -100,7 +100,11 @@
 @media screen and (min-width: 768px) {
   .logo {
     margin-left: 0;
-    margin-right: 60px;
+    margin-right: 80px;
+  }
+
+  .logo img {
+    height: 50px;
   }
 
   .header-container {
@@ -112,7 +116,7 @@
   }
 
   .nav-list {
-    gap: 25px;
+    gap: 16px;
   }
 
   .mobile-menu {
@@ -132,6 +136,10 @@
   .logo {
     margin-left: 0;
     margin-right: 370px;
+  }
+
+  .logo img {
+    height: 80px;
   }
 
   .header-container {
