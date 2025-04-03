@@ -1,62 +1,25 @@
-/* .footer {
-  width: 100%;
-  background: #9dafab;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
 .footer-container {
   max-width: 375px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
-
-/* =================== TITLE =========== */
-.title-container-wt {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
 }
 
-.title-firstPart-title-wt {
-  display: flex;
-}
-
-.img-wt {
-  width: 44px;
-  height: 44px;
-}
-.title-wt {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 40px;
+.footer-title {
+  font-weight: 600;
+  font-size: 32px;
   line-height: 100%;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: #fafafa;
-  margin-left: 8px;
-  flex: 1;
+  color: #0d0d0d;
+  text-align: center;
 }
-.title-wt-work {
-  color: #ed3b44;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.footer-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #0d0d0d;
+  text-align: justify;
 }
+
 /* ======================= FORM =============== */
 .form-container-wt {
   display: flex;
@@ -79,35 +42,39 @@
 }
 
 .wt-email-input {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid rgba(18, 17, 17, 0.2);
+  border-radius: 10px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.6);
+  color: rgba(14, 14, 14, 0.6);
   max-width: 343px;
   height: 44px;
-  padding-bottom: 20px;
+  padding: 20px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.wt-comment-input {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+.wt-phone-input {
+  border: 1px solid rgba(18, 17, 17, 0.2);
+  border-radius: 10px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.6);
+  color: rgba(14, 14, 14, 0.6);
   max-width: 343px;
   height: 44px;
-  padding-bottom: 20px;
+  padding: 20px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .wt-email-input:hover,
-.wt-comment-input:hover {
-  color: #fafafa;
-  border-color: #fafafa;
+.wt-phone-input:hover {
+  color: #161515;
+  border-color: #30634e;
+}
+
+.wt-email-input:focus,
+.wt-phone-input:focus {
+  color: #161515;
+  border-color: #30634e;
 }
 
 .wt-success-message {
@@ -133,21 +100,37 @@
   height: 100px;
   border-radius: 100%;
   letter-spacing: -0.02em;
-  background-color: #ed3b44;
+  background-color: #9dafab;
   border: none;
   color: #fafafa;
   transition: box-shadow 0.8s ease-in-out, background 0.8s ease-in-out;
+  margin: 0 auto;
 }
 
 .btn-wt:hover {
   box-shadow: 0 0 10px #fafafa, 0 0 20px rgba(255, 255, 255, 0.5);
-  background-color: #2d2e30;
+  background-color: #3bb251;
 }
 
 /* =============== CONTACT LINK =============== */
 .container-link-wt {
   display: flex;
+  flex-direction: column;
   gap: 4px;
+}
+
+.contacts-title {
+  text-align: center;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.links-list {
+  padding-left: 0;
 }
 
 .link-email-wt {
@@ -156,12 +139,10 @@
   padding: 10px 12px;
   max-width: 178px;
   text-align: center;
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
-  color: #fafafa;
-  transition: box-shadow 0.8s ease-in-out, background 0.8s ease-in-out;
+  color: #0d0d0d;
 }
 
 .link-tel-wt {
@@ -170,12 +151,10 @@
   padding: 10px 12px;
   max-width: 118px;
   text-align: center;
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
-  color: #fafafa;
-  transition: box-shadow 0.8s ease-in-out, background 0.8s ease-in-out;
+  color: #0d0d0d;
 }
 
 .link-email-wt:hover,
@@ -243,7 +222,6 @@
 }
 
 .modal-title-wt {
-  font-family: “Inter Tight”, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
@@ -254,7 +232,6 @@
 }
 
 .modal-text-wt {
-  font-family: “Inter Tight”, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -270,22 +247,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .work-together {
+  .footer {
     margin-top: 132px;
     padding-bottom: 89px;
-  }
-
-  .container-wt {
-    padding-bottom: 80px;
-  }
-
-  .title-wt {
-    font-size: 64px;
-  }
-
-  .img-wt {
-    width: 70px;
-    height: 70px;
   }
 
   .form-container-wt {
@@ -309,7 +273,7 @@
     min-width: 245px;
   }
 
-  .wt-comment-input {
+  .wt-phone-input {
     min-width: 245px;
   }
 
@@ -344,7 +308,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .work-together {
+  .footer {
     margin-top: 130px;
     padding-bottom: 89px;
   }
@@ -376,7 +340,7 @@
     min-width: 390px;
   }
 
-  .wt-comment-input {
+  .wt-phone-input {
     min-width: 390px;
   }
 }

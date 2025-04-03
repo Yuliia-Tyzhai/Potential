@@ -4,52 +4,57 @@ import axios from 'axios';
 
 const form = document.querySelector('.wt-form');
 const formEmail = document.querySelector('.wt-email-input');
-const formComment = document.querySelector('.wt-comment-input');
-const successMessage = document.querySelector('.wt-success-message');
-const errorMessage = document.querySelector('.wt-error-message');
+const formPhone = document.querySelector('.wt-phone-input');
+const errorMessageEmail = document.querySelector('.wt-error-message');
+const errorMessagePhone = document.querySelector('.wt-phone-error');
 const backdrop = document.querySelector('.backdrop-wt');
 const modalWindow = document.querySelector('.modal-wt');
 const modalCloseBtn = document.querySelector('.modal-close-btn-wt');
+
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const phonePattern = /^\+?[0-9]{11,14}$/;
 
 formEmail.addEventListener('input', function () {
   const email = formEmail.value.trim();
   if (emailPattern.test(email)) {
     formEmail.classList.add('success');
     formEmail.classList.remove('error');
-    successMessage.style.display = 'block';
-    errorMessage.style.display = 'none';
+    errorMessageEmail.style.display = 'none';
   } else {
     formEmail.classList.add('error');
     formEmail.classList.remove('success');
-    successMessage.style.display = 'none';
-    errorMessage.style.display = 'block';
+    errorMessageEmail.style.display = 'block';
   }
 });
 
-const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-formComment.addEventListener('blur', function () {
-  const maxLength = 30;
-  if (formComment.value.length > maxLength) {
-    formComment.value = formComment.value.substring(0, maxLength) + '...';
+formPhone.addEventListener('input', function () {
+  const phone = formPhone.value.trim();
+  if (phonePattern.test(phone)) {
+    formPhone.classList.add('success');
+    formPhone.classList.remove('error');
+    errorMessagePhone.style.display = 'none';
+  } else {
+    formPhone.classList.add('error');
+    formPhone.classList.remove('success');
+    errorMessagePhone.style.display = 'block';
   }
 });
-//  =================== LocalStorage ==============
-formComment.addEventListener('input', function () {
-  localStorage.setItem('comments', formComment.value);
-});
+
 formEmail.addEventListener('input', function () {
   localStorage.setItem('email', formEmail.value);
 });
+formPhone.addEventListener('input', function () {
+  localStorage.setItem('phone', formPhone.value);
+});
 
 document.addEventListener('DOMContentLoaded', function () {
-  const savedComments = localStorage.getItem('comments');
   const savedEmail = localStorage.getItem('email');
-  if (savedComments) {
-    formComment.value = savedComments;
-  }
+  const savedPhone = localStorage.getItem('phone');
   if (savedEmail) {
     formEmail.value = savedEmail;
+  }
+  if (savedPhone) {
+    formPhone.value = savedPhone;
   }
 });
 
@@ -69,6 +74,8 @@ function openModal() {
     }
   });
   form.reset();
+  localStorage.removeItem('email');
+  localStorage.removeItem('phone');
 }
 
 function closeModal() {
@@ -82,28 +89,49 @@ function closeModal() {
     }
   });
 }
+
 form.addEventListener('submit', async function (event) {
   event.preventDefault();
+
   const emailValue = formEmail.value.trim();
-  const textComment = formComment.value;
+  const phoneValue = formPhone.value.trim();
+
+  if (!emailPattern.test(emailValue)) {
+    iziToast.error({
+      position: 'topRight',
+      theme: 'dark',
+      backgroundColor: '#ef4040',
+      message: 'Некоректний email, спробуйте знову!',
+    });
+    return;
+  }
+
+  if (!phonePattern.test(phoneValue)) {
+    iziToast.error({
+      position: 'topRight',
+      theme: 'dark',
+      backgroundColor: '#ef4040',
+      message: 'Некоректний номер телефону, спробуйте знову!',
+    });
+    return;
+  }
+
   try {
+    // Відправлення даних на Leeloo
     const response = await axios.post(
-      'https://portfolio-js.b.goit.study/api/requests/',
+      'https://api.leeloo.ai/v1/data', // Замініть на правильний ендпоінт Leeloo
       {
         email: emailValue,
-        comment: textComment,
+        phone: phoneValue,
       },
       {
         headers: {
           'Content-Type': 'application/json',
+          Authorization: 'Bearer YOUR_API_KEY', // Замініть на реальний API-ключ
         },
       }
     );
-    formEmail.classList.remove('success');
-    successMessage.style.display = 'none';
     openModal();
-    localStorage.removeItem('email');
-    localStorage.removeItem('comments');
   } catch (error) {
     iziToast.error({
       position: 'topRight',
@@ -111,7 +139,7 @@ form.addEventListener('submit', async function (event) {
       messageColor: 'white',
       backgroundColor: '#ef4040',
       message:
-        'Error: ' + (error.response?.data?.message || 'Something went wrong'),
+        'Помилка: ' + (error.response?.data?.message || 'Щось пішло не так'),
     });
   }
 });

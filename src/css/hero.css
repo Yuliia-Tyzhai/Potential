@@ -29,8 +29,13 @@
   line-height: 1.2;
 }
 
-.hero-btn {
-  display: block;
+.hero-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-link {
   font-size: 24px;
   background-color: #51722f;
   color: #cdc4c4;
@@ -40,11 +45,11 @@
   margin: 0 auto;
 }
 
-.hero-btn:hover {
+.hero-link:hover {
   background-color: #519e04;
 }
 
-.hero-btn:focus {
+.hero-link:focus {
   background-color: #9ff44a;
   color: #8e8b8b;
 }
@@ -66,7 +71,7 @@
     line-height: 1.2;
   }
 
-  .hero-btn {
+  .hero-link {
     font-size: 32px;
     padding: 20px;
   }
@@ -89,7 +94,7 @@
     text-align: center;
   }
 
-  .hero-btn {
+  .hero-link {
     font-size: 38px;
     padding: 25px;
   }

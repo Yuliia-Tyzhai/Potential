@@ -11,14 +11,14 @@
   <div class="footer-container container">
     <div class="title-container">
       <h2 class="footer-title">Готові до змін?</h2>
-      <p>
+      <p class="footer-text">
         Не витрачайте більше часу на неефективні процеси. Зв'яжіться з нами
         сьогодні, щоб дізнатися, як ми можемо допомогти Вашим HR-відділам
         досягти успіху.
       </p>
     </div>
     <!-- ========== FORM =========== -->
-    <form action="#" class="wt-form" id="workForm">
+    <form action="#" class="wt-form">
       <div class="form-container-wt">
         <div class="contact-wt">
           <div class="email-test-message">
@@ -29,25 +29,42 @@
               placeholder="clients@gmail.com"
               required
             />
-            <span class="wt-success-message">Success!</span>
-            <span class="wt-error-message">Invalid email, try again</span>
+            <span class="wt-error-message"
+              >Невалідний емейл, спробуйте знову!</span
+            >
           </div>
           <input
-            type="text"
-            class="wt-comment-input"
-            id="comments"
-            placeholder="comments"
+            type="tel"
+            class="wt-phone-input"
+            id="phone"
+            placeholder="+380XXXXXXXXX"
+            required
           />
         </div>
-        <button class="btn-wt" type="submit">Send</button>
+        <button class="btn-wt" type="submit">Відправити</button>
       </div>
     </form>
     <!-- ========= LINK ====== -->
     <div class="container-link-wt">
-      <a class="link-email-wt" href="mailto:lloydjefferson@gmail.com"
-        >lloydjefferson@gmail.com</a
-      >
-      <a class="link-tel-wt" href="tel:+380111111111"> +380 11 111 11 11</a>
+      <h3 class="contacts-title">Наші контакти:</h3>
+      <div class="links-container">
+        <ul class="links-list">
+          <li class="links-list-item">
+            <a class="link-email-wt" href="mailto:email@gmail.com"
+              >email@gmail.com</a
+            >
+          </li>
+          <li class="links-list-item">
+            <a class="link-tel-wt" href="tel:+380731455235">+380731455235</a>
+          </li>
+          <li class="links-list-item">
+            <a class="link-tel-wt" href="tel:+380671425235">+380671425235</a>
+          </li>
+          <li class="links-list-item">
+            <a class="link-tel-wt" href="tel:+380663521010">+380663521010</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -56,13 +73,13 @@
   <div class="modal-wt">
     <button type="button" class="modal-close-btn-wt">
       <svg class="modal-close-img-wt" width="22" height="22">
-        <use href="/img/icons.svg#icon-x"></use>
+        <use href="/img/icons/icons.svg#icon-x"></use>
       </svg>
     </button>
-    <h3 class="modal-title-wt">Thank you for your interest in cooperation!</h3>
+    <h3 class="modal-title-wt">Дякуємо за Вашу увагу щодо співпраці!</h3>
     <p class="modal-text-wt">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
+      Наш менеджер найближчим часом сконтактує з Вами, щоб обговорити деталі та
+      можливості співпраці.
     </p>
   </div>
 </div>
