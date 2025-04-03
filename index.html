@@ -20,7 +20,7 @@
     <title>Potential+</title>
     <script type="module" crossorigin src="/Potential/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Potential/assets/vendor-CNnl3omO.js">
-    <link rel="stylesheet" crossorigin href="/Potential/assets/index-BNnG3JdJ.css">
+    <link rel="stylesheet" crossorigin href="/Potential/assets/index-6hB3xFHo.css">
   </head>
   <body>
     <header class="header">
@@ -87,7 +87,10 @@
       <svg class="hero-icon-first" width="24" height="24">
         <use href="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='768'%20height='768'%20viewBox='0%200%20768%20768'%3e%3cg%20id='icomoon-ignore'%3e%3c/g%3e%3cpath%20fill='%23000'%20d='M736%20384c0-97.184-39.424-185.248-103.104-248.896s-151.712-103.104-248.896-103.104-185.248%2039.424-248.896%20103.104-103.104%20151.712-103.104%20248.896%2039.424%20185.248%20103.104%20248.896%20151.712%20103.104%20248.896%20103.104%20185.248-39.424%20248.896-103.104%20103.104-151.712%20103.104-248.896zM672%20384c0%2079.552-32.192%20151.488-84.352%20203.648s-124.096%2084.352-203.648%2084.352-151.488-32.192-203.648-84.352-84.352-124.096-84.352-203.648%2032.192-151.488%2084.352-203.648%20124.096-84.352%20203.648-84.352%20151.488%2032.192%20203.648%2084.352%2084.352%20124.096%2084.352%20203.648zM256%20416h178.752l-73.376%2073.376c-12.512%2012.512-12.512%2032.768%200%2045.248s32.768%2012.512%2045.248%200l128-128c2.944-2.944%205.312-6.464%206.944-10.368%203.232-7.84%203.232-16.672%200-24.512-1.568-3.776-3.872-7.296-6.944-10.368l-128-128c-12.512-12.512-32.768-12.512-45.248%200s-12.512%2032.768%200%2045.248l73.376%2073.376h-178.752c-17.664%200-32%2014.336-32%2032s14.336%2032%2032%2032z'%3e%3c/path%3e%3c/svg%3e"></use>
       </svg>
-      <button class="hero-btn" type="button">Записатися на консультацію</button>
+      <div class="hero-link-container">
+        <a class="hero-link" href="./#footer">Записатися на консультацію</a>
+      </div>
+
       <svg class="hero-icon-second" width="24" height="24">
         <use href="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M8.578%2016.594l4.594-4.594-4.594-4.594%201.406-1.406%206%206-6%206z'%3e%3c/path%3e%3c/svg%3e"></use>
       </svg>
@@ -374,14 +377,14 @@
   <div class="footer-container container">
     <div class="title-container">
       <h2 class="footer-title">Готові до змін?</h2>
-      <p>
+      <p class="footer-text">
         Не витрачайте більше часу на неефективні процеси. Зв'яжіться з нами
         сьогодні, щоб дізнатися, як ми можемо допомогти Вашим HR-відділам
         досягти успіху.
       </p>
     </div>
     <!-- ========== FORM =========== -->
-    <form action="#" class="wt-form" id="workForm">
+    <form action="#" class="wt-form">
       <div class="form-container-wt">
         <div class="contact-wt">
           <div class="email-test-message">
@@ -392,25 +395,42 @@
               placeholder="clients@gmail.com"
               required
             />
-            <span class="wt-success-message">Success!</span>
-            <span class="wt-error-message">Invalid email, try again</span>
+            <span class="wt-error-message"
+              >Невалідний емейл, спробуйте знову!</span
+            >
           </div>
           <input
-            type="text"
-            class="wt-comment-input"
-            id="comments"
-            placeholder="comments"
+            type="tel"
+            class="wt-phone-input"
+            id="phone"
+            placeholder="+380XXXXXXXXX"
+            required
           />
         </div>
-        <button class="btn-wt" type="submit">Send</button>
+        <button class="btn-wt" type="submit">Відправити</button>
       </div>
     </form>
     <!-- ========= LINK ====== -->
     <div class="container-link-wt">
-      <a class="link-email-wt" href="mailto:lloydjefferson@gmail.com"
-        >lloydjefferson@gmail.com</a
-      >
-      <a class="link-tel-wt" href="tel:+380111111111"> +380 11 111 11 11</a>
+      <h3 class="contacts-title">Наші контакти:</h3>
+      <div class="links-container">
+        <ul class="links-list">
+          <li class="links-list-item">
+            <a class="link-email-wt" href="mailto:email@gmail.com"
+              >email@gmail.com</a
+            >
+          </li>
+          <li class="links-list-item">
+            <a class="link-tel-wt" href="tel:+380731455235">+380731455235</a>
+          </li>
+          <li class="links-list-item">
+            <a class="link-tel-wt" href="tel:+380671425235">+380671425235</a>
+          </li>
+          <li class="links-list-item">
+            <a class="link-tel-wt" href="tel:+380663521010">+380663521010</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -419,13 +439,13 @@
   <div class="modal-wt">
     <button type="button" class="modal-close-btn-wt">
       <svg class="modal-close-img-wt" width="22" height="22">
-        <use href="/img/icons.svg#icon-x"></use>
+        <use href="/Potential/assets/icons-7d6Kbw3v.svg#icon-x"></use>
       </svg>
     </button>
-    <h3 class="modal-title-wt">Thank you for your interest in cooperation!</h3>
+    <h3 class="modal-title-wt">Дякуємо за Вашу увагу щодо співпраці!</h3>
     <p class="modal-text-wt">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
+      Наш менеджер найближчим часом сконтактує з Вами, щоб обговорити деталі та
+      можливості співпраці.
     </p>
   </div>
 </div>
