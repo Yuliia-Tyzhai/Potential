@@ -1,8 +1,11 @@
 .footer {
   max-width: 375px;
-
   display: flex;
   margin: 0 auto;
+  width: 100%;
+}
+
+.footer-container {
   width: 100%;
 }
 
@@ -123,6 +126,9 @@
   flex-direction: column;
   gap: 4px;
   background-color: #9dafab;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
 }
 
 .contacts-title {
@@ -301,7 +307,7 @@
   }
 
   .link-tel-wt {
-    min-width: 171px;
+    min-width: 239px;
     height: 55px;
     font-size: 16px;
     padding: 18px 32px;
