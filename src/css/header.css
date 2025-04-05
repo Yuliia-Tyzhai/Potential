@@ -37,7 +37,15 @@
 .nav-list li a {
   text-decoration: none;
   font-size: 1rem;
-  color: #4a4949;
+  color: #24401b;
+}
+
+.nav-list li a:hover {
+  color: #f9fbf9;
+}
+
+.nav-list li a:focus {
+  color: #7f827e;
 }
 
 .mobile-menu {

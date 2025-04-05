@@ -20,7 +20,7 @@
 
 .footer-text {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 100%;
   letter-spacing: -0.03em;
   color: #0d0d0d;
@@ -265,6 +265,15 @@
     padding-bottom: 89px;
   }
 
+  .footer-title {
+    font-size: 48px;
+  }
+
+  .footer-text {
+    font-size: 22px;
+    text-align: center;
+  }
+
   .form-container-wt {
     flex-direction: row;
     margin-bottom: 18px;
@@ -329,6 +338,14 @@
     max-width: 1440px;
     margin-top: 130px;
     padding-bottom: 89px;
+  }
+
+  .footer-title {
+    font-size: 64px;
+  }
+
+  .footer-text {
+    font-size: 28px;
   }
 
   .container-wt {
